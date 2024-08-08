@@ -33,6 +33,13 @@ h1 {
     height: 10%;
     background-color: green;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1 header img {
+    width: 50px;
+    display: none;
 }
 
 .container1 nav {
@@ -68,6 +75,10 @@ h1 {
         flex-direction: column;
     }
 
+    .container1 header img {
+        display: block;
+    }
+
     .container1 main nav {
         display: none;
     }
@@ -92,6 +103,13 @@ h1 {
 .container2 header {
     background-color: green;
     height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 header img {
+    width: 50px;
+    display: none;
 }
 
 .container2 nav {
@@ -139,6 +157,11 @@ h1 {
     .container2 nav {
         display: none;
     }
+
+    .container2 header img {
+        width: 50px;
+        display: block;
+    }
 }
 
 /* 3rd Container */
@@ -150,6 +173,13 @@ h1 {
 
 .container3 header, .container3 footer {
     background-color: green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3 header img {
+    width: 50px;
+    display: none;
 }
 
 .container3 nav {
@@ -194,6 +224,10 @@ h1 {
     .container3 nav {
         display: none;
     }
+
+    .container3 header img {
+        display: block;
+    }
     
 }
 
@@ -207,6 +241,13 @@ h1 {
 .container4 header, .container4 footer {
     background-color: green;
     height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container4 header img {
+    width: 50px;
+    display: none;
 }
 
 .container4 nav {
@@ -271,5 +312,9 @@ h1 {
 
     .container {
         padding: 5px;
+    }
+
+    .container4 header img {
+        display: block;
     }
 }
