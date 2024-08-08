@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+/* first container */
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+}
+
+.container1 {
+    flex-direction: column;
+}
+
+.container1 header, .container1 footer {
+    height: 10%;
+    background-color: green;
+    padding: 5px;
+}
+
+.container1 nav {
+    background-color: blue;
+    height: 10%;
+}
+
+.container1 main {
+    height: 70%;
+    display: flex;
+}
+
+.container1 main nav {
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.container1 main article{
+    width: 60%;
+    background-color: red;
+}
+
+.container1 main aside {
+    width: 20%;
+    background-color: violet;
+}
+
+/* 2nd container */
+
+.container2 {
+    flex-direction: column;
+}
+
+.container2 header {
+    background-color: green;
+    height: 20%;
+}
+
+.container2 nav {
+    background-color: blue;
+    width: 20%;
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    height: 80%;
+}
+
+.main-container main {
+    background-color: brown;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.main-container main nav {
+    background-color: yellow;
+    order: 3;
+    width: 100%;
+    height: 20%;
+}
+
+.main-container main article {
+    background-color: red;
+    flex: 3;
+}
+
+.main-container main aside {
+    background-color: violet;
+    flex: 2;
+}
+
+.container2 footer {
+    background-color: green;
+    height: 10%;
+}
+
+/* 3rd Container */
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 header, .container3 footer {
+    background-color: green;
+}
+
+.container3 nav {
+    background-color: blue;
+}
+
+.container3 main {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+.container3 main article {
+    background-color: red;
+    flex: 3;
+}
+
+.container3 section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 section article {
+    background-color: yellow;
+    flex: 2;
+}
+
+.container3 section aside {
+    background-color: violet;
+    flex: 1;
+}
+
+/* 4th container */
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container4 header, .container4 footer {
+    background-color: green;
+    height: 10%;
+}
+
+.container4 nav {
+    background-color: blue;
+    height: 10%;
+}
+
+.container4 main {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container4 main section {
+    display: flex;
+}
+
+.container4 main article {
+    background-color: red;
+    height: 70%;
+}
+
+.container4 section {
+    height: 30%;
+}
+
+.container4 section article {
+    background-color: yellow;
+    width: 80%;
+    height: auto;
+}
+
+.container4 main aside {
+    background-color: violet;
+    width: 20%;
+}
