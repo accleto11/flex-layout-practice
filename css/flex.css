@@ -22,6 +22,7 @@ h1 {
     border: 1px solid black;
     display: flex;
     text-align: center;
+    margin: 10px auto;
 }
 
 .container1 {
@@ -60,6 +61,28 @@ h1 {
     background-color: violet;
 }
 
+/* mobile */ 
+
+@media screen and (max-width: 768px) {
+    .container1 main {
+        flex-direction: column;
+    }
+
+    .container1 main nav {
+        display: none;
+    }
+
+    .container1 main article {
+        height: 60%;
+        width: 100%;
+    }
+
+    .container1 main aside {
+        width: 100%;
+        height: 40%;
+    }
+}
+
 /* 2nd container */
 
 .container2 {
@@ -83,7 +106,6 @@ h1 {
 }
 
 .main-container main {
-    background-color: brown;
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
@@ -111,6 +133,14 @@ h1 {
     height: 10%;
 }
 
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .container2 nav {
+        display: none;
+    }
+}
+
 /* 3rd Container */
 
 .container3 {
@@ -129,7 +159,7 @@ h1 {
 .container3 main {
     display: flex;
     justify-content: space-evenly;
-    height: 80%;
+    height: 100vh;
 }
 
 .container3 main article {
@@ -151,6 +181,20 @@ h1 {
 .container3 section aside {
     background-color: violet;
     flex: 1;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .container3 main {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .container3 nav {
+        display: none;
+    }
+    
 }
 
 /* 4th container */
@@ -199,4 +243,33 @@ h1 {
 .container4 main aside {
     background-color: violet;
     width: 20%;
+}
+
+/* mobile */ 
+
+@media screen and (max-width: 768px) {
+    .container4 main{
+        height: 100vh;
+    }
+
+    .container4 nav {
+        display: none;
+    }
+
+    .container4 main aside {
+        display: none;
+    }
+
+    .container4 main article{
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .container {
+        padding: 5px;
+    }
 }
