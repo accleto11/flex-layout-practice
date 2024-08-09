@@ -13,7 +13,7 @@
 }
 
 aside {
-    background-color: blueviolet;
+    background-color: darkslateblue;
     padding: 20px;
 }
 
@@ -64,5 +64,20 @@ textarea {
 input[type="submit"] {
     background-color: gray;
 }
+
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width: 900px) and (max-width: 1200px) {
+    article {
+        background-color: red;
+    }
+} */
 
 
