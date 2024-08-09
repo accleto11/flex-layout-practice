@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    height: 80vh;
+    width: 900px;
+    margin: 10px auto;
+}
+
+aside {
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+}
+
+h4, h3 {
+    margin: 10px auto;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "left right"
+    "bottom bottom";
+    gap: 15px;
+}
+
+.left {
+    grid-area: left;
+    display: grid;
+}
+
+.right {
+    grid-area: right;
+    display: grid;
+}
+
+.bottom-section {
+    grid-area: bottom;
+    display: grid;
+    margin-top: 20px;
+}
+
+input {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    background-color: gray;
+}
+
+
